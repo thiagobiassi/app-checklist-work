@@ -103,7 +103,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
                         +"GESTOR: " + gestor.getText().toString().toUpperCase()+"\n"
                         +"SETOR: " + setor.getText().toString().toUpperCase()+"\n\n"
 
-                        +"DADOS DO EQUIPAMENTO"+"\n"
+                        +"DADOS DO EQUIPAMENTO ENTREGUE"+"\n"
                         +"HOSTNAME: " + hostname.getText().toString().toUpperCase()+"\n"
                         +"SERVICE TAG: " + serviceTag.getText().toString().toUpperCase()+"\n"
                         +"TIPO DE CPU: " + tipoCpu.getText().toString().toUpperCase()+"\n"
@@ -117,7 +117,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
                         +"TAMANHO: " + tamanhoDisco.getText().toString().toUpperCase()+"GB"+"\n"
                         +"HOST MOVIMENTADO NO AD: " + hostNoAd.getText().toString().toUpperCase()+"\n\n"
 
-                        +"DADOS DO DEVOLVIDO"+"\n"
+                        +"DADOS DO EQUIPAMENTO DEVOLVIDO"+"\n"
                         +"HOSTNAME: " + hostnameDevolvido.getText().toString().toUpperCase()+"\n"
                         +"SERVICE TAG: " + serviceTagDevolvido.getText().toString().toUpperCase()+"\n"
                         +"TIPO DE CPU: " + tipoCpuDevolvido.getText().toString().toUpperCase()+"\n"
