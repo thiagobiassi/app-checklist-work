@@ -73,7 +73,7 @@ public class GiveFragment extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 ClipboardManager clipBoard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clipData = ClipData.newPlainText("EditText", "" +
-                        "*MOTIVO DA ENTREGA:* " + motivo.getText().toString().toUpperCase()+"\n\n"
+                        "MOTIVO DA ENTREGA: " + motivo.getText().toString().toUpperCase()+"\n\n"
 
                         +"NOME DO COLABORADOR: " + nome.getText().toString().toUpperCase()+"\n"
                         +"EMPRESA: " + empresa.getText().toString().toUpperCase()+"\n"
@@ -97,8 +97,8 @@ public class GiveFragment extends Fragment implements View.OnClickListener{
                 );
                 clipBoard.setPrimaryClip(clipData);
 
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://teams.microsoft.com/l/channel/19%3ayJaLcoyVGP6PyeRaRHhISvoPq1GUR-73Bzz5hKWRcsc1%40thread.tacv2/" +
-                        "Geral?groupId=d4ec5d34-4c49-4dfd-89fe-cd71b5669143&tenantId=da17bd8d-38b0-45a2-a80a-af014c246e20"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://teams.microsoft.com/l/channel/19%3aSmMBtnY6jAihuDo0HwSYng9-Zw-DMAS0izuO46Q2qfc1%40thread.tacv2/Geral?" +
+                        "groupId=84413faf-7487-40c5-ae2e-acff6bcc2f89&tenantId=db84cc25-a34d-48ae-81b9-7d26ab3769eb"));
                 startActivity(intent);
 
             }
