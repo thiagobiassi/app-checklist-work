@@ -95,7 +95,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 ClipboardManager clipBoard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clipData = ClipData.newPlainText("EditText", "" +
-                        "MOTIVO DA ENTREGA: " + motivo.getText().toString().toUpperCase()+"\n\n"
+                        "*MOTIVO DA ENTREGA: *" + motivo.getText().toString().toUpperCase()+"\n\n"
 
                         +"NOME DO COLABORADOR: " + nome.getText().toString().toUpperCase()+"\n"
                         +"EMPRESA: " + empresa.getText().toString().toUpperCase()+"\n"
