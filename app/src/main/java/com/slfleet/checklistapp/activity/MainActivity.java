@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
 
                                 //Configura título e mensagem
-                                dialog.setTitle("Excluir e Editar");
+                                dialog.setTitle("Excluir ou Editar");
                                 dialog.setMessage("Deseja excluir ou editar a tarefa " + " \"" + tarefaSelecionada.getNomeTarefa()+ "\"" + "?" );
 
                                 dialog.setPositiveButton("Excluir", new DialogInterface.OnClickListener() {
