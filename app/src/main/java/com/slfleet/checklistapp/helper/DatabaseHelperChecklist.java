@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.helper;
+package com.slfleet.checklistapp.helper;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.slfleet.listadetarefas.model.ToDoModel;
+import com.slfleet.checklistapp.model.ToDoModel;
 
 import java.util.ArrayList;
 import java.util.List;

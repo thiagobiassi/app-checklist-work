@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas;
+package com.slfleet.checklistapp;
 
 import org.junit.Test;
 

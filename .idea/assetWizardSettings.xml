@@ -63,7 +63,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="69" />
+                                                <entry key="scalingPercent" value="95" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -77,7 +77,6 @@
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="1f4cfc" />
                                       <entry key="foregroundImage" value="C:\Users\Thiago\Desktop\icon.png" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>

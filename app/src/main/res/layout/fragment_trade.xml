@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        tools:context=".activity.Fragment.GiveFragment">
+
+        <TextView
+            android:id="@+id/dadosColaborador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_marginLeft="50dp"
+            android:text="DADOS DO COLABORADOR"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/motivoEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosColaborador">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/motivoEntregaEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Motivo da entrega: " />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nomeColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivoEntrega">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nomeColaboradorEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do colaborador:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/empresaColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomeColaborador">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/empresaColaboradorEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Empresa:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/matriculaColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empresaColaborador">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/matriculaColaboradorEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Matrícula:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/gestorColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/matriculaColaborador">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/gestorColaboradorEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gestor:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/setorColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gestorColaborador">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/setorColaboradorEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Setor:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/dadosEquipamento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="DADOS DO EQUIPAMENTO ENTREGUE"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="4.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setorColaborador" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/hostnameEquip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosEquipamento">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/hostnameEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hostname:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/serviceTagEquip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hostnameEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/serviceTagEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Service Tag:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tipoDeCpuEquip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serviceTagEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tipoDeCpuEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de CPU:" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/velocidadeEmGhzEquip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipoDeCpuEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/velocidadeEmGhzEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Velocidade em GHz:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/marcaEquip"
+            android:layout_width="143dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/velocidadeEmGhzEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/marcaEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marca:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/modeloEquip"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marcaEquip"
+            app:layout_constraintTop_toBottomOf="@+id/velocidadeEmGhzEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/modeloEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Modelo:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/memoriaEquip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modeloEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/memoriaEquipEit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Memória:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/discoEquip"
+            android:layout_width="143dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memoriaEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/discoEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Disco:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tamanhoEquip"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marcaEquip"
+            app:layout_constraintTop_toBottomOf="@+id/memoriaEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tamanhoEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Tamanho:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/adEquip"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discoEquip">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/adEquipEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Host movimentado no AD:" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/dadosEquipamentoDevolvido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="DADOS DO EQUIPAMENTO DEVOLVIDO"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="4.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adEquip" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/hostnameEquipDevolvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosEquipamentoDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/hostnameEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hostname:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/serviceTagEquipDevolvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hostnameEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/serviceTagEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Service Tag:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tipoDeCpuEquipDevolvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serviceTagEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tipoDeCpuEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de CPU:" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/velocidadeEmGhzEquipDevolvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipoDeCpuEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/velocidadeEmGhzEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Velocidade em GHz:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/marcaEquipDevolvido"
+            android:layout_width="143dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/velocidadeEmGhzEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/marcaEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marca:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/modeloEquipDevolvido"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marcaEquip"
+            app:layout_constraintTop_toBottomOf="@+id/velocidadeEmGhzEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/modeloEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Modelo:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/memoriaEquipDevolvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modeloEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/memoriaEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Memória:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/discoEquipDevolvido"
+            android:layout_width="143dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memoriaEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/discoEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Disco:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tamanhoEquipDevolvido"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marcaEquipDevolvido"
+            app:layout_constraintTop_toBottomOf="@+id/memoriaEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tamanhoEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Tamanho:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/adEquipDevolvido"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discoEquipDevolvido">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/adEquipDevolvidoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Host movimentado no AD:" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonTeams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_roundedtwo"
+            android:backgroundTint="@color/projectColor"
+            android:text="COMPARTILHAR COM O TEAMS"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adEquipDevolvido" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

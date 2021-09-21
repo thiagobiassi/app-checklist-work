@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.adapter;
+package com.slfleet.checklistapp.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.activity.AddNewTask;
-import com.slfleet.listadetarefas.activity.ChecklistActivity;
-import com.slfleet.listadetarefas.helper.DatabaseHelperChecklist;
-import com.slfleet.listadetarefas.model.ToDoModel;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.activity.AddNewChecklist;
+import com.slfleet.checklistapp.activity.ChecklistActivity;
+import com.slfleet.checklistapp.helper.DatabaseHelperChecklist;
+import com.slfleet.checklistapp.model.ToDoModel;
 
 import java.util.List;
 
@@ -84,9 +84,9 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
         Bundle bundle = new Bundle();
         bundle.putInt("id", item.getId());
         bundle.putString("task", item.getTask());
-        AddNewTask fragment = new AddNewTask();
+        AddNewChecklist fragment = new AddNewChecklist();
         fragment.setArguments(bundle);
-        fragment.show(activity.getSupportFragmentManager(), AddNewTask.TAG);
+        fragment.show(activity.getSupportFragmentManager(), AddNewChecklist.TAG);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

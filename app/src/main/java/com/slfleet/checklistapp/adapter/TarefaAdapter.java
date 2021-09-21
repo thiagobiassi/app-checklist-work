@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.adapter;
+package com.slfleet.checklistapp.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.model.Tarefa;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.model.Tarefa;
 
 import java.util.List;
 

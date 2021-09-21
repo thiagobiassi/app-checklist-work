@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.activity;
+package com.slfleet.checklistapp.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
@@ -7,11 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.helper.TarefaDAO;
-import com.slfleet.listadetarefas.model.Tarefa;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.helper.TarefaDAO;
+import com.slfleet.checklistapp.model.Tarefa;
 
-public class AdicionarTarefaActivity extends AppCompatActivity {
+public class AddNewTask extends AppCompatActivity {
 
     private TextInputEditText editChecklist;
     private Tarefa tarefaAtual;
@@ -19,7 +19,7 @@ public class AdicionarTarefaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adicionar_tarefa);
+        setContentView(R.layout.new_task);
         editChecklist = findViewById(R.id.textTarefa);
 
         // Recuperar checklist, caso seja edição

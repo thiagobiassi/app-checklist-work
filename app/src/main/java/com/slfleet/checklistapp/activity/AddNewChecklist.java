@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.activity;
+package com.slfleet.checklistapp.activity;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -15,14 +15,14 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.helper.DatabaseHelperChecklist;
-import com.slfleet.listadetarefas.helper.DialogCloseListener;
-import com.slfleet.listadetarefas.model.ToDoModel;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.helper.DatabaseHelperChecklist;
+import com.slfleet.checklistapp.helper.DialogCloseListener;
+import com.slfleet.checklistapp.model.ToDoModel;
 
 import java.util.Objects;
 
-public class AddNewTask extends BottomSheetDialogFragment {
+public class AddNewChecklist extends BottomSheetDialogFragment {
 
     public static final String TAG = "ActionBottomDialog";
     private EditText newTaskText;
@@ -31,8 +31,8 @@ public class AddNewTask extends BottomSheetDialogFragment {
 
     private DatabaseHelperChecklist db;
 
-    public static AddNewTask newInstance() {
-        return new AddNewTask();
+    public static AddNewChecklist newInstance() {
+        return new AddNewChecklist();
     }
 
     @Override
@@ -45,7 +45,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.new_task, container, false);
+        View view = inflater.inflate(R.layout.new_checklist, container, false);
         getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 
         return view;

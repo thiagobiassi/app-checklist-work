@@ -1,16 +1,14 @@
-package com.slfleet.listadetarefas.activity;
+package com.slfleet.checklistapp.activity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.VideoView;
 
-import com.slfleet.listadetarefas.R;
+import com.slfleet.checklistapp.R;
 
 public class SplashActivity extends AppCompatActivity {
 

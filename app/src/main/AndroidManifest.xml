@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.slfleet.listadetarefas">
+    package="com.slfleet.checklistapp">
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.slfleet.listadetarefas.activity.ChecklistActivity"></activity>
-        <activity android:name="com.slfleet.listadetarefas.activity.SplashActivity">
+        <activity android:name="com.slfleet.checklistapp.activity.SendTermActivity" />
+        <activity android:name="com.slfleet.checklistapp.activity.ChecklistActivity" />
+        <activity android:name="com.slfleet.checklistapp.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,12 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.slfleet.listadetarefas.activity.MainActivity"
+            android:name="com.slfleet.checklistapp.activity.MainActivity"
             android:label="Tarefa"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name="com.slfleet.listadetarefas.activity.AdicionarTarefaActivity" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.slfleet.checklistapp.activity.AddNewTask" />
     </application>
 
 </manifest>

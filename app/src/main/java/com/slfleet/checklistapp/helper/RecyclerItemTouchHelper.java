@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.helper;
+package com.slfleet.checklistapp.helper;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,8 +11,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.adapter.ToDoAdapter;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.adapter.ToDoAdapter;
 
 public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
     private ToDoAdapter adapter;

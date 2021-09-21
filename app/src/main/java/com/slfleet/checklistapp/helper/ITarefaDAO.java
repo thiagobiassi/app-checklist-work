@@ -1,6 +1,6 @@
-package com.slfleet.listadetarefas.helper;
+package com.slfleet.checklistapp.helper;
 
-import com.slfleet.listadetarefas.model.Tarefa;
+import com.slfleet.checklistapp.model.Tarefa;
 
 import java.util.List;
 

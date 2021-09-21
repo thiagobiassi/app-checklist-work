@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.activity;
+package com.slfleet.checklistapp.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 
 
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.adapter.TarefaAdapter;
-import com.slfleet.listadetarefas.helper.RecyclerItemClickListener;
-import com.slfleet.listadetarefas.helper.TarefaDAO;
-import com.slfleet.listadetarefas.model.Tarefa;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.adapter.TarefaAdapter;
+import com.slfleet.checklistapp.helper.RecyclerItemClickListener;
+import com.slfleet.checklistapp.helper.TarefaDAO;
+import com.slfleet.checklistapp.model.Tarefa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                                     public void onClick(DialogInterface dialog, int which) {
 
                                         // Recuperar tarefa para edição
-                                        Intent intent = new Intent(MainActivity.this, AdicionarTarefaActivity.class);
+                                        Intent intent = new Intent(MainActivity.this, AddNewTask.class);
                                         intent.putExtra("tarefaEdicao", tarefaSelecionada);
 
                                         startActivity(intent);
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AdicionarTarefaActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AddNewTask.class);
                 startActivity(intent);
             }
         });

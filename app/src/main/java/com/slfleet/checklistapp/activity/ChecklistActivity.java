@@ -1,6 +1,7 @@
-package com.slfleet.listadetarefas.activity;
+package com.slfleet.checklistapp.activity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -8,16 +9,17 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
-import com.slfleet.listadetarefas.helper.RecyclerItemTouchHelper;
-import com.slfleet.listadetarefas.helper.DialogCloseListener;
-import com.slfleet.listadetarefas.R;
-import com.slfleet.listadetarefas.adapter.ToDoAdapter;
-import com.slfleet.listadetarefas.helper.DatabaseHelperChecklist;
-import com.slfleet.listadetarefas.model.Tarefa;
-import com.slfleet.listadetarefas.model.ToDoModel;
+import com.slfleet.checklistapp.helper.RecyclerItemTouchHelper;
+import com.slfleet.checklistapp.helper.DialogCloseListener;
+import com.slfleet.checklistapp.R;
+import com.slfleet.checklistapp.adapter.ToDoAdapter;
+import com.slfleet.checklistapp.helper.DatabaseHelperChecklist;
+import com.slfleet.checklistapp.model.Tarefa;
+import com.slfleet.checklistapp.model.ToDoModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +34,7 @@ public class ChecklistActivity extends AppCompatActivity implements DialogCloseL
     private FloatingActionButton fab;
     private Long taskId;
     private TextView nomeChecklist;
+    private Button buttonTerm;
 
     private List<ToDoModel> taskList;
     private List<ToDoModel> taskListFilterAdd;
@@ -41,6 +44,16 @@ public class ChecklistActivity extends AppCompatActivity implements DialogCloseL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checklist);
         Objects.requireNonNull(getSupportActionBar()).hide();
+
+        // Direcionar para a activity SendTermActivity
+        buttonTerm = findViewById(R.id.buttonTerm);
+        buttonTerm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChecklistActivity.this, SendTermActivity.class);
+                startActivity(intent);
+            }
+        });
 
         nomeChecklist = findViewById(R.id.nomeChecklist);
 
@@ -75,9 +88,9 @@ public class ChecklistActivity extends AppCompatActivity implements DialogCloseL
                 Bundle bundle = new Bundle();
                 bundle.putLong("taskId", taskId);
                 bundle.putBoolean("new", true);
-                AddNewTask dialog = AddNewTask.newInstance();
+                AddNewChecklist dialog = AddNewChecklist.newInstance();
                 dialog.setArguments(bundle);
-                dialog.show(getSupportFragmentManager(), AddNewTask.TAG);
+                dialog.show(getSupportFragmentManager(), AddNewChecklist.TAG);
             }
         });
     }

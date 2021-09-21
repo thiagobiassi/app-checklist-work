@@ -1,4 +1,4 @@
-package com.slfleet.listadetarefas.model;
+package com.slfleet.checklistapp.model;
 
 import java.io.Serializable;
 
