@@ -11,9 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.slfleet.checklistapp.activity.SendTermActivity" />
-        <activity android:name="com.slfleet.checklistapp.activity.ChecklistActivity" />
-        <activity android:name="com.slfleet.checklistapp.activity.SplashActivity">
+        <activity android:name=".options.EntregaActivity"></activity>
+        <activity android:name=".activity.OptionsActivity" />
+        <activity android:name=".activity.SendTermActivity" />
+        <activity android:name=".activity.ChecklistActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +23,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.slfleet.checklistapp.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:label="Tarefa"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.slfleet.checklistapp.activity.AddNewTask" />
+        <activity android:name=".activity.AddNewTask" />
     </application>
 
 </manifest>

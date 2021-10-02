@@ -29,6 +29,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
 
     private TextInputEditText hostname;
     private TextInputEditText serviceTag;
+    private TextInputEditText patrimonio;
     private TextInputEditText tipoCpu;
     private TextInputEditText velocidadeGhz;
     private TextInputEditText marca;
@@ -40,6 +41,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
 
     private TextInputEditText hostnameDevolvido;
     private TextInputEditText serviceTagDevolvido;
+    private TextInputEditText patrimonioDevolvido;
     private TextInputEditText tipoCpuDevolvido;
     private TextInputEditText velocidadeGhzDevolvido;
     private TextInputEditText marcaDevolvido;
@@ -69,6 +71,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
 
         hostname = view.findViewById(R.id.hostnameEquipEdit2);
         serviceTag = view.findViewById(R.id.serviceTagEquipEdit2);
+        patrimonio = view.findViewById(R.id.patrimonioEquipEdit2);
         tipoCpu = view.findViewById(R.id.tipoDeCpuEquipEdit2);
         velocidadeGhz = view.findViewById(R.id.velocidadeEmGhzEquipEdit2);
         marca = view.findViewById(R.id.marcaEquipEdit2);
@@ -80,6 +83,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
 
         hostnameDevolvido = view.findViewById(R.id.hostnameEquipDevolvidoEdit);
         serviceTagDevolvido = view.findViewById(R.id.serviceTagEquipDevolvidoEdit);
+        patrimonioDevolvido = view.findViewById(R.id.patrimonioEquipDevolvidoEdit);
         tipoCpuDevolvido = view.findViewById(R.id.tipoDeCpuEquipDevolvidoEdit);
         velocidadeGhzDevolvido = view.findViewById(R.id.velocidadeEmGhzEquipDevolvidoEdit);
         marcaDevolvido = view.findViewById(R.id.marcaEquipDevolvidoEdit);
@@ -106,6 +110,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
                         +"DADOS DO EQUIPAMENTO ENTREGUE"+"\n"
                         +"HOSTNAME: " + hostname.getText().toString().toUpperCase()+"\n"
                         +"SERVICE TAG: " + serviceTag.getText().toString().toUpperCase()+"\n"
+                        +"PATRIMÔNIO: " + patrimonio.getText().toString().toUpperCase()+"\n"
                         +"TIPO DE CPU: " + tipoCpu.getText().toString().toUpperCase()+"\n"
                         +"VELOCIDADE EM GHz: " + velocidadeGhz.getText().toString().toUpperCase()+"\n"
                         +"MARCA: " + marca.getText().toString().toUpperCase()+"\n"
@@ -120,6 +125,7 @@ public class TradeFragment extends Fragment implements View.OnClickListener {
                         +"DADOS DO EQUIPAMENTO DEVOLVIDO"+"\n"
                         +"HOSTNAME: " + hostnameDevolvido.getText().toString().toUpperCase()+"\n"
                         +"SERVICE TAG: " + serviceTagDevolvido.getText().toString().toUpperCase()+"\n"
+                        +"PATRIMÔNIO: " + patrimonioDevolvido.getText().toString().toUpperCase()+"\n"
                         +"TIPO DE CPU: " + tipoCpuDevolvido.getText().toString().toUpperCase()+"\n"
                         +"VELOCIDADE EM GHz: " + velocidadeGhzDevolvido.getText().toString().toUpperCase()+"\n"
                         +"MARCA: " + marcaDevolvido.getText().toString().toUpperCase()+"\n"

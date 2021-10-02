@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private TarefaAdapter tarefaAdapter;
-    private List<Tarefa> listaTarefas = new ArrayList<>();
+    private List<Tarefa> listaTarefas;
     private Tarefa tarefaSelecionada;
 
     @Override
@@ -111,8 +111,6 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                 });
 
-
-
                                 //Exibir dialog
                                 dialog.create();
                                 dialog.show();
@@ -131,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AddNewTask.class);
+                Intent intent = new Intent(getApplicationContext(), OptionsActivity.class);
                 startActivity(intent);
             }
         });

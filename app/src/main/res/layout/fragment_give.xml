@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dadosColaborador">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/motivoEntregaEdit2"
+            android:id="@+id/motivoEntregaEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Motivo da entrega: " />
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/motivoEntrega">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/nomeColaboradorEdit2"
+            android:id="@+id/nomeColaboradorEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome do colaborador:" />
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nomeColaborador">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/empresaColaboradorEdit2"
+            android:id="@+id/empresaColaboradorEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Empresa:" />
@@ -92,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/empresaColaborador">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/matriculaColaboradorEdit2"
+            android:id="@+id/matriculaColaboradorEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -110,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/matriculaColaborador">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/gestorColaboradorEdit2"
+            android:id="@+id/gestorColaboradorEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Gestor:" />
@@ -127,7 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gestorColaborador">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/setorColaboradorEdit2"
+            android:id="@+id/setorColaboradorEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Setor:" />
@@ -162,7 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dadosEquipamento">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/hostnameEquipEdit2"
+            android:id="@+id/hostnameEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Hostname:" />
@@ -179,10 +179,27 @@
         app:layout_constraintTop_toBottomOf="@+id/hostnameEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/serviceTagEquipEdit2"
+            android:id="@+id/serviceTagEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Service Tag:" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/patrimonioEquip"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceTagEquip">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/patrimonioEquipEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patrimonio:"
+            android:inputType="number" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -193,10 +210,10 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/serviceTagEquip">
+        app:layout_constraintTop_toBottomOf="@+id/patrimonioEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/tipoDeCpuEquipEdit2"
+            android:id="@+id/tipoDeCpuEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tipo de CPU:" />
@@ -214,7 +231,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tipoDeCpuEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/velocidadeEmGhzEquipEdit2"
+            android:id="@+id/velocidadeEmGhzEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
@@ -230,7 +247,7 @@
         app:layout_constraintTop_toBottomOf="@+id/velocidadeEmGhzEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/marcaEquipEdit2"
+            android:id="@+id/marcaEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Marca:" />
@@ -248,7 +265,7 @@
         app:layout_constraintTop_toBottomOf="@+id/velocidadeEmGhzEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/modeloEquipEdit2"
+            android:id="@+id/modeloEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Modelo:" />
@@ -265,7 +282,7 @@
         app:layout_constraintTop_toBottomOf="@+id/modeloEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/memoriaEquipEit2"
+            android:id="@+id/memoriaEquipEit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -281,7 +298,7 @@
         app:layout_constraintTop_toBottomOf="@+id/memoriaEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/discoEquipEdit2"
+            android:id="@+id/discoEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Disco:" />
@@ -299,7 +316,7 @@
         app:layout_constraintTop_toBottomOf="@+id/memoriaEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/tamanhoEquipEdit2"
+            android:id="@+id/tamanhoEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -316,7 +333,7 @@
         app:layout_constraintTop_toBottomOf="@+id/discoEquip">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/adEquipEdit2"
+            android:id="@+id/adEquipEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Host movimentado no AD:" />

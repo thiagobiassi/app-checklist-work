@@ -36,6 +36,7 @@ public class GiveFragment extends Fragment implements View.OnClickListener{
     private TextInputEditText disco;
     private TextInputEditText tamanhoDisco;
     private TextInputEditText hostNoAd;
+    private TextInputEditText patrimonio;
 
     public GiveFragment() {
         // Required empty public constructor
@@ -49,23 +50,24 @@ public class GiveFragment extends Fragment implements View.OnClickListener{
 
         // Enviando para o Microsoft Teams
         // Declarando variáveis para cópia
-        motivo = view.findViewById(R.id.motivoEntregaEdit2);
-        nome = view.findViewById(R.id.nomeColaboradorEdit2);
-        empresa = view.findViewById(R.id.empresaColaboradorEdit2);
-        matricula = view.findViewById(R.id.matriculaColaboradorEdit2);
-        gestor = view.findViewById(R.id.gestorColaboradorEdit2);
-        setor = view.findViewById(R.id.setorColaboradorEdit2);
+        motivo = view.findViewById(R.id.motivoEntregaEdit);
+        nome = view.findViewById(R.id.nomeColaboradorEdit);
+        empresa = view.findViewById(R.id.empresaColaboradorEdit);
+        matricula = view.findViewById(R.id.matriculaColaboradorEdit);
+        gestor = view.findViewById(R.id.gestorColaboradorEdit);
+        setor = view.findViewById(R.id.setorColaboradorEdit);
 
-        hostname = view.findViewById(R.id.hostnameEquipEdit2);
-        serviceTag = view.findViewById(R.id.serviceTagEquipEdit2);
-        tipoCpu = view.findViewById(R.id.tipoDeCpuEquipEdit2);
-        velocidadeGhz = view.findViewById(R.id.velocidadeEmGhzEquipEdit2);
-        marca = view.findViewById(R.id.marcaEquipEdit2);
-        modelo = view.findViewById(R.id.modeloEquipEdit2);
-        memoria = view.findViewById(R.id.memoriaEquipEit2);
-        disco = view.findViewById(R.id.discoEquipEdit2);
-        tamanhoDisco = view.findViewById(R.id.tamanhoEquipEdit2);
-        hostNoAd = view.findViewById(R.id.adEquipEdit2);
+        hostname = view.findViewById(R.id.hostnameEquipEdit);
+        serviceTag = view.findViewById(R.id.serviceTagEquipEdit);
+        patrimonio = view.findViewById(R.id.patrimonioEquipEdit);
+        tipoCpu = view.findViewById(R.id.tipoDeCpuEquipEdit);
+        velocidadeGhz = view.findViewById(R.id.velocidadeEmGhzEquipEdit);
+        marca = view.findViewById(R.id.marcaEquipEdit);
+        modelo = view.findViewById(R.id.modeloEquipEdit);
+        memoria = view.findViewById(R.id.memoriaEquipEit);
+        disco = view.findViewById(R.id.discoEquipEdit);
+        tamanhoDisco = view.findViewById(R.id.tamanhoEquipEdit);
+        hostNoAd = view.findViewById(R.id.adEquipEdit);
 
         buttonTeams = view.findViewById(R.id.buttonTeams);
         buttonTeams.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +87,7 @@ public class GiveFragment extends Fragment implements View.OnClickListener{
                         +"HOSTNAME: " + hostname.getText().toString().toUpperCase()+"\n"
                         +"SERVICE TAG: " + serviceTag.getText().toString().toUpperCase()+"\n"
                         +"TIPO DE CPU: " + tipoCpu.getText().toString().toUpperCase()+"\n"
+                        +"PATRIMÔNIO: " + patrimonio.getText().toString().toUpperCase()+"\n"
                         +"VELOCIDADE EM GHz: " + velocidadeGhz.getText().toString().toUpperCase()+"\n"
                         +"MARCA: " + marca.getText().toString().toUpperCase()+"\n"
                         +"MODELO: " + modelo.getText().toString().toUpperCase()+"\n"
@@ -93,7 +96,7 @@ public class GiveFragment extends Fragment implements View.OnClickListener{
                         +"BUILD: 2004\n"
                         +"DISCO: " + disco.getText().toString().toUpperCase()+"\n"
                         +"TAMANHO: " + tamanhoDisco.getText().toString().toUpperCase()+"GB"+"\n"
-                        +"HOST MOVIMENTADO NO AD: " + hostNoAd.getText().toString().toUpperCase()
+                        +"HOST MOVIMENTADO NO AD: " + hostNoAd.getText().toString().toUpperCase()+ "\n\n"
                 );
                 clipBoard.setPrimaryClip(clipData);
 
